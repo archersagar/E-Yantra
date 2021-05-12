@@ -19,7 +19,6 @@ cursor.execute('''CREATE TABLE {tablename}(
                     address VARCHAR(50),
                     critical_level INT,
                     multiplier INT,
-                    O2_saturation INT,
                     O2_dosage INT,
                     Remdesivir_dosage INT);
             '''.format(tablename='HospitalB'))
