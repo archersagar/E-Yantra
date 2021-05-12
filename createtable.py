@@ -13,6 +13,7 @@ cursor = conn.cursor()
 cursor.execute('''CREATE TABLE {tablename}(
                     Patient_id INT,
                     Patient_name VARCHAR(20),
+                    Patient_gender VARCHAR(10),
                     Patient_age INT,
                     Patient_dob DATE,
                     address VARCHAR(50),
