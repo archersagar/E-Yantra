@@ -10,13 +10,11 @@ conn = pyodbc.connect('''Driver={ODBC Driver 13 for SQL Server};
 
 cursor = conn.cursor()
 
-cmd = ("INSERT INTO [dbo].[{table}] VALUES({patient_id}, '{patient_name}','{patient_gender}' {patient_age}, '{patient_dob}', '{address}',"+
-                                             "{criticalness}, {multiplier},{O2_dosage},"+
-                                             "{Remdesivir_dosage});").format(table='HospitalA', patient_id = 35,patient_name = 'aaa', patient_gender="male", patient_age = 75,patient_dob = '03-jul-88',
-    address = "abcd,efgh,hyd,telangana",criticalness = 5,multiplier = 1,O2_dosage = 1,Remdesivir_dosage = 0)
+cmd = ("INSERT INTO [dbo].[{table}] VALUES({patient_id}, '{patient_name}', {patient_age}, '{patient_dob}','{patient_gender}', '{address}',"+
+                                             "{criticalness},{O2_dosage},"+
+                                             "{Remdesivir_dosage});").format(table='HospitalG',patient_id = 123,patient_name = 'Ramesh',patient_age = 31,patient_dob = '15-aug-90',
+    patient_gender='Male',address = "#123, Second Cross, Hyd",criticalness = 2,O2_dosage = 440,Remdesivir_dosage = 2)
 
 cursor.execute(cmd)
 
 conn.commit()
-
-
