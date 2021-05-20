@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Patient Admission</title>
+    </head>
+    
+    <body>
+        <header>
+           <div class="navbar">
+               <div class="logo">
+                   <a href="#"> <img src="logo2.jpg" width="130" height="80"></a>
+               </div>
+           </div>
+       </header>
+    
+       <a class = "back" href="choose.html"> Back</a>
+       
+   
+       <link rel="stylesheet" href="patients.css">
+   
+    
+    
+    
+       <div class="form">
+    
+       <h1 class = "heading">Patient Details</h1>
+        <form>
+           <input class="align" type="text" id="field1" placeholder="Patient Name" />
+            <br>
+            <input type="text" name="field2" placeholder="Patient ID" />
+            <br>
+            <label class="align"for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <br>
+              <div class="dob">
+               <label class="align">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male"> Male </label> 
+                <input type = "radio" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Non-Binary</label>
+             </div>
+            <br>
+            <input type="text" id="address" placeholder="Patient's Address" />
+            <br>
+            <div class="critical">
+                <label class="align"for="critical" placeholder ="Critical level">Patient critical level: </label>
+                      <select name="critical" id="critical">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                  <br>
+            </div>
+            <input type="number" id="dosage" placeholder="O2 Dosage Req."/>
+            <br>
+            <input type="number" id="dosage" placeholder="Remdesivir Dosage Req."/>
+            <br>
+            <input type="text" name="remarks" placeholder="Remarks"/>
+            <br>
+          </form>
+        </div>
+    
+        <button onclick="Alert()" type="submit"  value="Submit"> Enter
+            <script>
+                function Alert(){
+                window.alert("Patient details updated!");}
+            </script>
+        </button>
+    </body>
+</html>

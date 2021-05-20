@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Relocation</title>
+        <link rel="stylesheet" href="relocation.css">
+        
+    </head>   
+     
+    <body>
+        <header>
+               <div class="navbar">
+                   <div class="logo">
+                       <a href="#"> <img src="logo2.jpg" width="130" height="80"></a>
+                   </div>
+               </div>
+        </header>
+       
+        <a class = "back" href="choose.html"> Back</a>
+
+
+        <center>
+        <div class="form">
+            <h1>Relocation Portal</h1>
+            <form>
+               <input type="text" name="field2" placeholder="Patient ID" />
+               <br>
+                <div class="wrapper">
+                <div class="hosp">
+                    <label class="align"for="hosp" placeholder ="hosp">Hospital from: </label>
+                          <select name="critical" id="critical">
+                            <option value="1">Hospital A</option>
+                            <option value="2">Hospital B</option>
+                            <option value="3">Hospital C</option>
+                            <option value="4">Hospital D</option>
+                            <option value="5">Hospital E</option>
+                            <option value="6">Hospital F</option>
+
+                          </select>
+                      <br>
+                </div>
+
+                <div class="hosp">
+                    <label class="align2"for="hosp2" placeholder ="hosp2">Hospital to: </label>
+                          <select name="critical" id="critical2">
+                            <option value="1">Hospital A</option>
+                            <option value="2">Hospital B</option>
+                            <option value="3">Hospital C</option>
+                            <option value="4">Hospital D</option>
+                            <option value="5">Hospital E</option>
+                            <option value="6">Hospital F</option>
+                          </select>
+                      <br>
+                    </div>
+                </div>            
+            </form>
+        </div>
+
+
+        <button onclick="Alert()" type="submit"  value="Submit"> Enter
+            <script>
+                function Alert(){
+                window.alert("Patient relocated!");}
+            </script>
+        </button>
+
+       </center>
+   
+    </body>
+</html>

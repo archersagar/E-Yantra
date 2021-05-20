@@ -1,0 +1,44 @@
+*{
+    font-family: 'Montserrat', sans-serif;    
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    padding:10px 10px;
+    margin-right:1200px;
+    justify-content: space-between;
+}
+
+a img{
+    border: 2px solid black;
+}
+
+.back{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+a:active{
+    color: black;
+}
+
+a:link{
+    color:black;
+}
+
+.back:hover{
+    color:#45a049;
+    
+}
+
+a:visited{
+    color:black;
+}
