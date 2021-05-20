@@ -15,8 +15,8 @@ cursor = conn.cursor()
 
 
 cursor.execute('''INSERT INTO [dbo].[{table2}] SELECT * FROM [dbo].[{table1}] WHERE {attribute} = {value}
-            '''.format(table1='HospitalA', table2='HospitalB' , attribute='patient_id' , value = 16753 ))
+            '''.format(table1='HospitalG', table2='HospitalH' , attribute='patient_id' , value = 123 ))
 
-cursor.execute('''DELETE FROM [dbo].[{table1}] WHERE patient_id = {patient_id};
-            '''.format(table1='HospitalA',patient_id=16753))            
+cursor.execute('''DELETE FROM [dbo].[{table1}] WHERE {attribute} = {value};
+            '''.format(table1='HospitalG',attribute='patient_id',value=123))            
 conn.commit()
