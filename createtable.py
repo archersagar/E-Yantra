@@ -10,16 +10,16 @@ conn = pyodbc.connect('''Driver={ODBC Driver 13 for SQL Server};
 
 cursor = conn.cursor()
 
-cursor.execute('''CREATE TABLE {tablename}(
+cursor.execute('''CREATE TABLE {table}(
                     Patient_id INT,
                     Patient_name VARCHAR(20),
-                    Patient_gender VARCHAR(10),
                     Patient_age INT,
                     Patient_dob DATE,
+                    Patient_gender VARCHAR(10),
                     address VARCHAR(50),
                     critical_level INT,
-                    multiplier INT,
                     O2_dosage INT,
                     Remdesivir_dosage INT);
-            '''.format(tablename='HospitalB'))
+            '''.format(table = HospitalG))
 conn.commit()
+
