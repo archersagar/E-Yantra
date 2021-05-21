@@ -28,7 +28,7 @@ cursor.execute('''CREATE TABLE {table}(
 <br>
 
 ## Code snippet to enter patient details into the database through HTMl website
-
+<p align="center"> <img src="Images/third.png" height="350"/>
 ```python
 cmd = ("INSERT INTO [dbo].[{table}] VALUES({patient_id}, '{patient_name}', {patient_age}, 
       '{patient_dob}','{patient_gender}', '{address}',"+ "{criticalness},{O2_dosage},"+
