@@ -21,6 +21,7 @@ cursor.execute('''CREATE TABLE {table}(
                '''.format(table = HospitalG))
 ```
 <br>
+
 ## Code snippet to enter patient details into the database through HTMl website
 
 ```python
@@ -31,6 +32,7 @@ cmd = ("INSERT INTO [dbo].[{table}] VALUES({patient_id}, '{patient_name}', {pati
       Second Cross, Hyd",criticalness = 2,O2_dosage = 440,Remdesivir_dosage = 2)
 ```
 <br>
+
 ## Code snippet to update pateint details
 
 ```python
@@ -38,6 +40,7 @@ cursor.execute('''UPDATE [dbo].[{table}] SET {attribute} = {value} WHERE patient
                '''.format(table='HospitalA',attribute = 'patient_age', value=25, patient_id = 16753 ))
 ```
 <br>
+
 ## Code snippet to transfer a patient from one hospital to another hospital
 
 ```python
@@ -48,6 +51,7 @@ cursor.execute('''DELETE FROM [dbo].[{table1}] WHERE {attribute} = {value};
                '''.format(table1='HospitalG',attribute='patient_id',value=123))    
 ```
 <br>
+
 ## Code snippet to discharge a patient
 
 ```python
