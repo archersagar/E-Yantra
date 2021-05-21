@@ -14,6 +14,21 @@ cmd = ("INSERT INTO [dbo].[{table}] VALUES({patient_id}, '{patient_name}', {pati
       Second Cross, Hyd",criticalness = 2,O2_dosage = 440,Remdesivir_dosage = 2)
 ```
 
+## Code snippet to transfer a patient from one hospital to another hospital
 
+```python
+cursor.execute('''INSERT INTO [dbo].[{table2}] SELECT * FROM [dbo].[{table1}] WHERE {attribute} = {value}
+               '''.format(table1='HospitalG', table2='HospitalH' , attribute='patient_id' , value = 123 ))
+
+cursor.execute('''DELETE FROM [dbo].[{table1}] WHERE {attribute} = {value};
+               '''.format(table1='HospitalG',attribute='patient_id',value=123))    
+```
+
+## Code snippet to discharge a patient
+
+```python
+cursor.execute('''DELETE FROM [dbo].[{table}] WHERE patient_id = {patient_id};
+               '''.format(table='HospitalA',patient_id=35))   
+```
 
 
