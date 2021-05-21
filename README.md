@@ -12,6 +12,7 @@ In case of severe issues, the influx of patients can be shifted to a partner vac
   
 ## Hardware and Software Requirements:
 - Server to store the database
+- SQL
 - Python installation
 - Chrome based browser
   
