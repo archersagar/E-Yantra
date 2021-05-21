@@ -7,6 +7,8 @@ In case of severe issues, the influx of patients can be shifted to a partner vac
 <br>
 
 <p align="center"> <img src="Images/first.png" height="350"/>
+<p align="center"> <img src="Images/second.png" height="350"/>
+
 
 ## Code snippet to create a database for a hospital to store details for resource management
 
