@@ -17,7 +17,7 @@ In case of severe issues, the influx of patients can be shifted to a partner vac
 - Server to store the database
 - SQL
 - Python installation
-- Chrome based browser
+- Chrome/Chromium based browser
   
 
 <br>
@@ -46,7 +46,7 @@ cursor.execute('''CREATE TABLE {table}(
 ```
 <br>
 
-## Code snippet to enter patient details into the database through HTMl website
+## Code snippet to enter patient details into the database through HTML website
 <p align="center"> <kbd><img src="Images/third.png" height="350" style="border: 1px solid black" /></kbd>
   
   
