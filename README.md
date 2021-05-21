@@ -10,6 +10,12 @@ In case of severe issues, the influx of patients can be shifted to a partner vac
 <p align="center"> <img src="Images/second.png" height="350"/>
 
 
+## Process Flow
+  
+<p align="center"> <img src="Images/sixth.png" height="250"/>
+
+
+
 ## Code snippet to create a database for a hospital to store details for resource management
 
 ```python
