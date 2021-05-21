@@ -6,7 +6,7 @@ In case of severe issues, the influx of patients can be shifted to a partner vac
 
 <br>
 
-<p align="center"> <img src="Images/first.png" height="350" style="border: 10px solid black" />
+<p align="center"> <img src="Images/first.png" height="350" style="border: 100px solid black" />
 <p align="center"> <img src="Images/second.png" height="350" style="border: 10px solid black" />
   
 
