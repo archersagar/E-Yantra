@@ -10,12 +10,13 @@ In case of severe issues, the influx of patients can be shifted to a partner vac
 <p align="center"> <img src="Images/second.png" height="350"/>
 
   
-## Hardware Requirements:
+## Hardware and Software Requirements:
 - Server to store the database
-  
-## Software Requirements:
 - Python installation
 - Chrome based browser
+  
+
+<br>
 
 
 ## Process Flow
