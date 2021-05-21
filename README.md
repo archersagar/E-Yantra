@@ -42,7 +42,6 @@ cursor.execute(cmd)
 <br>
 
 ## Code snippet to update patient details
-<p align="center"> <img src="Images/third.png" height="350"/>
   
   
 ```python
@@ -52,7 +51,7 @@ cursor.execute('''UPDATE [dbo].[{table}] SET {attribute} = {value} WHERE patient
 <br>
 
 ## Code snippet to transfer a patient from one hospital to another hospital
-<p align="center"> <img src="Images/third.png" height="350"/>
+<p align="center"> <img src="Images/fourth.png" height="350"/>
   
   
 ```python
@@ -65,7 +64,7 @@ cursor.execute('''DELETE FROM [dbo].[{table1}] WHERE {attribute} = {value};
 <br>
 
 ## Code snippet to discharge a patient
-<p align="center"> <img src="Images/third.png" height="350"/>
+<p align="center"> <img src="Images/fifth.png" height="350"/>
   
   
 ```python
