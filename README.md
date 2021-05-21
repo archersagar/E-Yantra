@@ -41,8 +41,10 @@ cursor.execute(cmd)
 ```
 <br>
 
-## Code snippet to update pateint details
-
+## Code snippet to update patient details
+<p align="center"> <img src="Images/third.png" height="350"/>
+  
+  
 ```python
 cursor.execute('''UPDATE [dbo].[{table}] SET {attribute} = {value} WHERE patient_id = {patient_id};
                '''.format(table='HospitalA',attribute = 'patient_age', value=25, patient_id = 16753 ))
@@ -50,7 +52,9 @@ cursor.execute('''UPDATE [dbo].[{table}] SET {attribute} = {value} WHERE patient
 <br>
 
 ## Code snippet to transfer a patient from one hospital to another hospital
-
+<p align="center"> <img src="Images/third.png" height="350"/>
+  
+  
 ```python
 cursor.execute('''INSERT INTO [dbo].[{table2}] SELECT * FROM [dbo].[{table1}] WHERE {attribute} = {value}
                '''.format(table1='HospitalG', table2='HospitalH' , attribute='patient_id' , value = 123 ))
@@ -61,7 +65,9 @@ cursor.execute('''DELETE FROM [dbo].[{table1}] WHERE {attribute} = {value};
 <br>
 
 ## Code snippet to discharge a patient
-
+<p align="center"> <img src="Images/third.png" height="350"/>
+  
+  
 ```python
 cursor.execute('''DELETE FROM [dbo].[{table}] WHERE patient_id = {patient_id};
                '''.format(table='HospitalA',patient_id=35))   
