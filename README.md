@@ -5,6 +5,7 @@ If the consumption is high the hospital admin is notified, so that there is enou
 In case of severe issues, the influx of patients can be shifted to a partner vacant hospital. 
 
 <br>
+
 ## Code snippet to create a database for a hospital to store details for resource management
 
 ```python
