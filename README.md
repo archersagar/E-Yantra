@@ -4,6 +4,22 @@ We have created a database management system at the hospital level for keeping t
 If the consumption is high the hospital admin is notified, so that there is enough time to source extra supplies.
 In case of severe issues, the influx of patients can be shifted to a partner vacant hospital. 
 
+## Code snippet to create a database for a hospital to store details for resource management
+
+```python
+cursor.execute('''CREATE TABLE {table}(
+                    Patient_id INT,
+                    Patient_name VARCHAR(20),
+                    Patient_age INT,
+                    Patient_dob DATE,
+                    Patient_gender VARCHAR(10),
+                    address VARCHAR(50),
+                    critical_level INT,
+                    O2_dosage INT,
+                    Remdesivir_dosage INT);
+            '''.format(table = HospitalG))
+```
+
 ## Code snippet to enter patient details into the database through HTMl website
 
 ```python
@@ -12,6 +28,12 @@ cmd = ("INSERT INTO [dbo].[{table}] VALUES({patient_id}, '{patient_name}', {pati
       "{Remdesivir_dosage});").format(table='HospitalG',patient_id = 123,patient_name = 'Ramesh',
       patient_age = 31,patient_dob = '15-aug-90', patient_gender='Male',address = "#123, 
       Second Cross, Hyd",criticalness = 2,O2_dosage = 440,Remdesivir_dosage = 2)
+```
+## Code snippet to update pateint details
+
+```python
+cursor.execute('''UPDATE [dbo].[{table}] SET {attribute} = {value} WHERE patient_id = {patient_id};
+               '''.format(table='HospitalA',attribute = 'patient_age', value=25, patient_id = 16753 ))
 ```
 
 ## Code snippet to transfer a patient from one hospital to another hospital
