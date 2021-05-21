@@ -25,7 +25,7 @@ In case of severe issues, the influx of patients can be shifted to a partner vac
 
 ## Process Flow
   
-<p align="center"> <img src="Images/sixth.PNG" height="250"/>
+<p align="center"> <img src="Images/sixth.PNG" height="250" style="border: 1px solid black" />
 
 
 
@@ -47,7 +47,7 @@ cursor.execute('''CREATE TABLE {table}(
 <br>
 
 ## Code snippet to enter patient details into the database through HTMl website
-<p align="center"> <img src="Images/third.png" height="350"/>
+<p align="center"> <img src="Images/third.png" height="350" style="border: 1px solid black" />
   
   
 ```python
@@ -70,7 +70,7 @@ cursor.execute('''UPDATE [dbo].[{table}] SET {attribute} = {value} WHERE patient
 <br>
 
 ## Code snippet to transfer a patient from one hospital to another hospital
-<p align="center"> <img src="Images/fourth.png" height="350"/>
+<p align="center"> <img src="Images/fourth.png" height="350" style="border: 1px solid black" />
   
   
 ```python
@@ -83,7 +83,7 @@ cursor.execute('''DELETE FROM [dbo].[{table1}] WHERE {attribute} = {value};
 <br>
 
 ## Code snippet to discharge a patient
-<p align="center"> <img src="Images/fifth.png" height="350"/>
+<p align="center"> <img src="Images/fifth.png" height="350" style="border: 1px solid black" />
   
   
 ```python
