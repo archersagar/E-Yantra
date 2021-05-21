@@ -12,7 +12,7 @@ In case of severe issues, the influx of patients can be shifted to a partner vac
 
 ## Process Flow
   
-<p align="center"> <img src="Images/sixth.png" height="250"/>
+<p align="center"> <img src="Images/sixth.PNG" height="250"/>
 
 
 
