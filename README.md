@@ -31,6 +31,7 @@ cmd = ("INSERT INTO [dbo].[{table}] VALUES({patient_id}, '{patient_name}', {pati
       "{Remdesivir_dosage});").format(table='HospitalG',patient_id = 123,patient_name = 'Ramesh',
       patient_age = 31,patient_dob = '15-aug-90', patient_gender='Male',address = "#123, 
       Second Cross, Hyd",criticalness = 2,O2_dosage = 440,Remdesivir_dosage = 2)
+cursor.execute(cmd)
 ```
 <br>
 
